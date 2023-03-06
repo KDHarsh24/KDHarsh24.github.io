@@ -454,7 +454,7 @@
                             <a href="assets/img/PML.pdf" target="_blank"> 
                            <div class="content">
                               <div class="content-overlay"></div>
-                                <img src="assets/img/G.png" class="card-img-top content-image" style="height:42px">     
+                                <img src="assets/img/G1.jpg" class="card-img-top content-image" style="height:42px">     
                             </div>
                             <div class="card-body">
                                 <h6 class="mt-0 py-2 text-center font-weight-bold mooc-title" style="font-size:12px;">Python For Machine </h6>
@@ -468,7 +468,7 @@
                             <a href="assets/img/DVP.pdf" target="_blank">
                            <div class="content">
                               <div class="content-overlay"></div>
-                              <img src="assets/img/G.png" class="card-img-top content-image" style="height:42px">      
+                              <img src="assets/img/G1.jpg" class="card-img-top content-image" style="height:42px">      
                               
                             </div>
                             <div class="card-body">
@@ -539,28 +539,5 @@
   
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-    <script>
-      const scrollto = (el) => {
-        let elementPos = select(el).offsetTop
-        window.scrollTo({
-          top: elementPos,
-          behavior: 'smooth'
-        })
-      }
-      let skilsContent = select('.skills-content');
-    if (skilsContent) {
-      new Waypoint({
-        element: skilsContent,
-        offset: '80%',
-        handler: function(direction) {
-          let progress = select('.progress .progress-bar', true);
-          progress.forEach((el) => {
-            el.style.width = el.getAttribute('aria-valuenow') + '%'
-          });
-        }
-      })
-    }
-  
-    </script>
 </body>
 </html>
