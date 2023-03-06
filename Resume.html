@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/mylogo1.jpg" rel="icon">
+  <link href="assets/img/mylogo1.jpg" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bad Script">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Satisfy">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    .resume .resume-title {
+      font-size: 26px;
+      font-weight: 700;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: #45505b;
+    }
+    
+    .resume .resume-item {
+      padding: 0 0 20px 20px;
+      margin-top: -2px;
+      border-left: 2px solid #0563bb;
+      position: relative;
+    }
+    
+    .resume .resume-item h4 {
+      line-height: 18px;
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-family: "Poppins", sans-serif;
+      color: #0563bb;
+      margin-bottom: 10px;
+    }
+    
+    .resume .resume-item h5 {
+      font-size: 16px;
+      background: #f7f8f9;
+      padding: 5px 15px;
+      display: inline-block;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    
+    .resume .resume-item ul {
+      padding-left: 20px;
+    }
+    
+    .resume .resume-item ul li {
+      padding-bottom: 10px;
+    }
+    
+    .resume .resume-item:last-child {
+      padding-bottom: 0;
+    }
+    
+    .resume .resume-item::before {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-radius: 50px;
+      left: -9px;
+      top: 0;
+      background: #fff;
+      border: 2px solid #0563bb;
+    }
+    .get_btn:hover{
+      color: #ffffff;
+    }
+    
+    .learn_btn{
+      background: #333333;
+      color: #ffffff;
+      padding: 14px 20px;
+      border-radius: 100px;
+      overflow: hidden;
+    }
+    .learn_btn:hover{
+      color: #ffffff;
+    }
+    
+    .sim-btn{
+      background: #333333;
+      color: #ffffff;
+      padding: 14px 20px;
+      border-radius: 100px;
+      overflow: hidden;
+      border: none;
+    }
+    
+    .sim-btn:hover{
+      color: #ffffff;
+    }
+    
+    .hvr-bounce-to-top{
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      position: relative;
+      -webkit-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+    }
+    .hvr-bounce-to-top::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #2098D1;
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        -webkit-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+    .hvr-bounce-to-top:hover::before, .hvr-bounce-to-top:focus::before, .hvr-bounce-to-top:active::before {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+        transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    }
+    section {
+  padding: 60px 0;
+  overflow: hidden;
+  }
+
+  .section-title {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #45505b;
+  }
+
+  .section-title h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+  }
+
+  .section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #0563bb;
+    bottom: 0;
+    left: calc(50% - 20px);
+  }
+
+  .section-title p {
+    margin-bottom: 0;
+  }
+  .skills .progress {
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+  }
+
+  .skills .progress .skill {
+    padding: 10px 0;
+    margin: 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #45505b;
+  }
+
+  .skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+  }
+
+  .skills .progress-bar-wrap {
+    background: #f2f3f5;
+  }
+
+  .skills .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: 0.9s;
+    background-color: #0563bb;
+  }
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+    width: 0px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #0078ff; 
+    border-radius: 10px;
+  }
+  .card{
+    height:90%;
+  }
+  </style>
+</head>
+<body>
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center justify-content-between">
+    
+          <h1 class="logo"><a href="index.html" style="font-family: 'Bad Script'; font-size:27px; color:gray">HarshKumarDas</a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+    
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a class="nav-link scrollto active" href="index.html#hero">Home</a></li>
+              <li><a class="nav-link scrollto" href="index.html#services">PortFolio</a></li>
+              <li><a class="nav-link scrollto " href="index.html#work">WorkSpace</a></li>
+              <li><a class="nav-link scrollto " href="index.html#blog">Mystery-History</a></li>
+              <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+        </div>
+    </header>
+    <section id="resume" class="about-mf sect-pt4 route" >
+        <div class="title-box text-center">
+          <h3 class="title-a">
+            Resume
+          </h3>
+          <p class="subtitle-a">
+            A Building Up Resume For A New Career, Writing up all the Qualifications.
+          </p>
+          <div class="line-mf"></div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="box-shadow-full" style="margin-bottom: -20px;">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-sm-6 col-md-5">
+                        <div class="about-img">
+                          <img src="assets/img/Harsh Photo.jpg" class="img-fluid rounded b-shadow-a" alt="" style="height:250px; width:auto">
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-7">
+                        <div class="about-info">
+                          <p style="font-size: 24px;"><span class="title-s">Name: </span> <span>Harsh Kumar Das</span></p>
+                          <p><span class="title-s">Profile: </span> <span>CSE Student</span></p>
+                          <p><span class="title-s">Email: </span> <span>harshkumardas24@gmail.com</span></p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="col-md-6">
+                    <div class="about-me pt-4 pt-md-0" >
+                      <div class="title-box-2">
+                        <h5 class="title-left">
+                          About me
+                        </h5>
+                      </div>
+                      <p class="lead">
+                        I am Harsh Kumar Das, a 18 year old from Kolkata by Origin pursuing his B.Tech in CSE from IIIT Manipur. 
+                      </p>
+                      <p class="lead">
+                        Person love of getting logic and applying every method on practical use , it's the reason for me to choose CSE for algorithm.
+                      </p>
+                      <p class="lead">
+                        I love different cultures, their ways of living, observing people's behaviour and gettin many more experiences...
+                      </p>
+                    </div>
+                    
+                  </div>
+                </div>
+              
+              <section id="skills" class="skills section-bg" style="margin-bottom: -55px;">
+                <div class="container aos-init aos-animate" data-aos="fade-up">
+                  <div class="section-title">
+                    <h2>Skills</h2>
+                    <p>Majorly Considering my Programming Skills or the skills with the Computation <br>As Having A Computer Science Background</p>
+                  </div>
+          
+                  <div class="row skills-content">
+          
+                    <div class="col-lg-6">
+          
+                      <div class="progress">
+                        <span class="skill">Python <i class="val">40%</i></span>
+                        <div class="progress-bar-wrap">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">Cannot Complete</div>
+                        </div>
+                      </div>
+          
+                      <div class="progress">
+                        <span class="skill">C/C++ <i class="val">60%</i></span>
+                        <div class="progress-bar-wrap">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+                        </div>
+                      </div>
+          
+                      <div class="progress">
+                        <span class="skill">SQL <i class="val">75%</i></span>
+                        <div class="progress-bar-wrap">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="progress">
+                        <span class="skill">HTML5 <i class="val">70%</i></span>
+                        <div class="progress-bar-wrap">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+                        </div>
+                      </div>
+          
+                      <div class="progress">
+                        <span class="skill">CSS3 <i class="val">50%</i></span>
+                        <div class="progress-bar-wrap">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+                        </div>
+                      </div>
+                    </div>
+          
+                  </div>
+          
+                </div>
+                <section class="resume">
+                    <div class="container aos-init aos-animate" data-aos="fade-up">
+              
+                      <div class="section-title">
+                        <h2>Qualification and Experience</h2>
+                        <p>A Starter Career.</p>
+                      </div>
+              
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <h1 class="resume-title" style="color:chocolate; font-size:36px">Harsh Kumar Das</h1>
+                          <h3 class="resume-title">Education</h3>
+                          <div class="resume-item">
+                            <h4>Bachelor of Technology <br> Computer Science Engineering</h4>
+                            <h5>2022 - 2026</h5>
+                            <p><em>Indian Institute of information Technology Manipur</em></p>
+                            <p>Pursuing B.Tech from IIIT Manipur (A Institute of National Importance) in the subject of Interest CSE.</p>
+                          </div>
+                          <div class="resume-item">
+                            <h4>Intermediate/+2</h4>
+                            <h5>2022</h5>
+                            <p><em>Kendriya Vidyalaya no. 3, Jaipur</em></p>
+                            <p>Passed 12th with 90% in Science Field with Scoring 94+ in CS, Mathematics and Physics
+                            </p>
+                          </div>
+                          <div class="resume-item">
+                            <h4>Matriculation</h4>
+                            <h5>2020</h5>
+                            <p><em>Kendriya Vidyalaya no. 3, Jaipur</em></p>
+                            <p>Passed 10th with 92% Scoring 100 in Mathematics
+                            </p>
+                          </div>
+                          <h3 class="resume-title">Acheivements</h3>
+                          <div class="resume-item">
+                            <h4>Joint Entrance Examination</h4>
+                            <h5>2022</h5>
+                            <p>With AIR : 24142 in JEE Advanced <br>AIR : 46566 in Mains <br>
+                            </p>
+                          </div>
+                          <div class="resume-item">
+                            <h4>NDA-148</h4>
+                            <h5>2022</h5>
+                            <p></p>
+                          </div>
+                          
+                        </div>
+                        <div class="col-lg-6" style="margin-top: 60px;">
+                          <h3 class="resume-title">Professional Experience</h3>
+                          <div class="resume-item" style="margin-bottom: 50px;">
+                            <h4>New to Work</h4>
+                            <h5>Present</h5>
+                            <p><em>
+                              <br><br><br>
+                            </em></p>
+                            <ul>
+                            </ul>
+                          </div>
+                          <a href="assets/img/CV.pdf" class="sim-btn hvr-bounce-to-top" style="text-decoration:none" target="_blank"><span >Resume/CV</span></a>
+                        </div>
+                      </div>
+                      
+                    
+                  </div>
+              </section>
+                <div id="mooc" class="container-fluid">
+                  <div class="section-title">
+                    <h2>Online Accreditation</h2>
+                  </div>
+                    <div class="row moocs">       
+                    <div class="col-6 col-md-3 col-sm-4 column aos-init" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="600">  
+                        <div class="card mb-3 mx-auto">
+                            <a href="https://coursera.org/share/0004ecd554646c6e46a23baea65672c2" target="_blank"> 
+                           <div class="content">
+                              <div class="content-overlay"></div>
+                                <img src="assets/img/coursera.png" class="card-img-top content-image">     
+                            </div>
+
+                            <div class="card-body">
+                                <h6 class="mt-0 py-2 text-center font-weight-bold mooc-title" style="font-size:12px;">Python for Web Access</h6>
+                            </div>
+                            </a>
+                        </div>
+                    </div>       
+                    <div class="col-6 col-md-3 col-sm-4 column aos-init" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="600">  
+                        <div class="card mb-3 mx-auto">
+                            <a href="assets/img/PML.pdf" target="_blank"> 
+                           <div class="content">
+                              <div class="content-overlay"></div>
+                                <img src="assets/img/G.png" class="card-img-top content-image" style="height:42px">     
+                            </div>
+                            <div class="card-body">
+                                <h6 class="mt-0 py-2 text-center font-weight-bold mooc-title" style="font-size:12px;">Python For Machine </h6>
+                            </div>
+                            </a>
+                        </div>
+                    </div>     
+                          
+                    <div class="col-6 col-md-3 col-sm-4 column aos-init" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="600">  
+                        <div class="card mb-3 mx-auto">
+                            <a href="assets/img/DVP.pdf" target="_blank">
+                           <div class="content">
+                              <div class="content-overlay"></div>
+                              <img src="assets/img/G.png" class="card-img-top content-image" style="height:42px">      
+                              
+                            </div>
+                            <div class="card-body">
+                                <h6 class="mt-0 py-2 text-center font-weight-bold mooc-title" style="font-size:12px;">Data Visualisation Using Python</h6>
+                            </div>
+                            </a>
+                        </div>
+                    </div>        
+                          
+                    <div class="col-6 col-md-3 col-sm-4 column aos-init" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="600">  
+                        <div class="card mb-3 mx-auto">
+                           <div class="content">
+                              <div class="content-overlay"></div>
+                                <img src="assets/img/HTML.svg" class="card-img-top content-image" style="height: 42px;">     
+                            </div>
+                            <div class="card-body">
+                                <h6 class="mt-0 py-2 text-center font-weight-bold mooc-title" style="font-size:12px;">Introduction to HTML 5</h6>
+                            </div>
+                        </div>
+                    </div>        
+                          
+                    <div class="col-6 col-md-3 col-sm-4 column aos-init" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="600">  
+                        <div class="card mb-3 mx-auto">
+                           <div class="content">
+                              <div class="content-overlay"></div>
+                                <img src="assets/img/css.png" class="card-img-top content-image" style="height:120px">     
+                            </div>
+                            <div class="card-body">
+                                <h6 class="mt-0 py-2 text-center font-weight-bold mooc-title" style="font-size:12px;">Introduction to CSS 3</h6>
+                            </div>
+                        </div>
+                    </div>        
+                                   
+                  </div>
+                </div>
+              </section>
+              </section>
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>HarshKumarDas</strong>. All Rights Reserved</p>
+            <div class="credits">
+              <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+            -->
+              Innovated from <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+  
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script>
+      const scrollto = (el) => {
+        let elementPos = select(el).offsetTop
+        window.scrollTo({
+          top: elementPos,
+          behavior: 'smooth'
+        })
+      }
+      let skilsContent = select('.skills-content');
+    if (skilsContent) {
+      new Waypoint({
+        element: skilsContent,
+        offset: '80%',
+        handler: function(direction) {
+          let progress = select('.progress .progress-bar', true);
+          progress.forEach((el) => {
+            el.style.width = el.getAttribute('aria-valuenow') + '%'
+          });
+        }
+      })
+    }
+  
+    </script>
+</body>
+</html>

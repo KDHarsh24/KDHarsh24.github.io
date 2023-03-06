@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>HKD24</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link rel="icon" href="assets/img/mylogo1.jpg">
+
+  <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="assets/vendor/aos/aos.css">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bad Script">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Satisfy">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: DevFolio - v4.10.0
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+    .resume .resume-title {
+      font-size: 26px;
+      font-weight: 700;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: #45505b;
+    }
+    
+    .resume .resume-item {
+      padding: 0 0 20px 20px;
+      margin-top: -2px;
+      border-left: 2px solid #0563bb;
+      position: relative;
+    }
+    
+    .resume .resume-item h4 {
+      line-height: 18px;
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-family: "Poppins", sans-serif;
+      color: #0563bb;
+      margin-bottom: 10px;
+    }
+    
+    .resume .resume-item h5 {
+      font-size: 16px;
+      background: #f7f8f9;
+      padding: 5px 15px;
+      display: inline-block;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    
+    .resume .resume-item ul {
+      padding-left: 20px;
+    }
+    
+    .resume .resume-item ul li {
+      padding-bottom: 10px;
+    }
+    
+    .resume .resume-item:last-child {
+      padding-bottom: 0;
+    }
+    
+    .resume .resume-item::before {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-radius: 50px;
+      left: -9px;
+      top: 0;
+      background: #fff;
+      border: 2px solid #0563bb;
+    }
+    .get_btn:hover{
+      color: #ffffff;
+    }
+    
+    .learn_btn{
+      background: #333333;
+      color: #ffffff;
+      padding: 14px 20px;
+      border-radius: 100px;
+      overflow: hidden;
+    }
+    .learn_btn:hover{
+      color: #ffffff;
+    }
+    
+    .sim-btn{
+      background: #333333;
+      color: #ffffff;
+      padding: 14px 20px;
+      border-radius: 100px;
+      overflow: hidden;
+      border: none;
+    }
+    
+    .sim-btn:hover{
+      color: #ffffff;
+    }
+    
+    .hvr-bounce-to-top{
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      position: relative;
+      -webkit-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+    }
+    .hvr-bounce-to-top::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #2098D1;
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        -webkit-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+    .hvr-bounce-to-top:hover::before, .hvr-bounce-to-top:focus::before, .hvr-bounce-to-top:active::before {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+        transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    }
+    section {
+    padding: 60px 0;
+    overflow: hidden;
+    }
+
+    .section-title {
+      text-align: center;
+      padding-bottom: 30px;
+    }
+
+    .section-title h2 {
+      font-size: 32px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      position: relative;
+      color: #45505b;
+    }
+
+    .section-title h2::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 120px;
+      height: 1px;
+      background: #ddd;
+      bottom: 1px;
+      left: calc(50% - 60px);
+    }
+
+    .section-title h2::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 40px;
+      height: 3px;
+      background: #0563bb;
+      bottom: 0;
+      left: calc(50% - 20px);
+    }
+
+    .section-title p {
+      margin-bottom: 0;
+    }
+    .skills .progress {
+      height: 60px;
+      display: block;
+      background: none;
+      border-radius: 0;
+    }
+
+    .skills .progress .skill {
+      padding: 10px 0;
+      margin: 0;
+      text-transform: uppercase;
+      display: block;
+      font-weight: 600;
+      font-family: "Poppins", sans-serif;
+      color: #45505b;
+    }
+
+    .skills .progress .skill .val {
+      float: right;
+      font-style: normal;
+    }
+
+    .skills .progress-bar-wrap {
+      background: #f2f3f5;
+    }
+
+    .skills .progress-bar {
+      width: 1px;
+      height: 10px;
+      transition: 0.9s;
+      background-color: #0563bb;
+    }
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background-color: none;
+      width: 0px;
+    }
+     
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #0078ff; 
+      border-radius: 10px;
+    }
+    #myVideo {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+    }
+    [data-aos] {
+      opacity: 1 !important;
+      transform: translate(0) scale(1) !important;
+  }
+  .service-box, .work-box, .card-blog{
+    height: 90%;
+  }
+    #particles-js{ position:absolute; left: 0px;top: 1px;width: 100%; height: 100%; background-color: none;  background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+  </style>
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html" style="font-family: 'Bad Script'; font-size:27px">HarshKumarDas</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="Resume.html">Resume</a></li>
+          <li><a class="nav-link scrollto" href="#services">PortFolio</a></li>
+          <li><a class="nav-link scrollto " href="#work">WorkSpace</a></li>
+          <li><a class="nav-link scrollto " href="#blog">Mystery-History</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/bg1.jpg)">
+    <div class="overlay-itro"></div>
+    
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <div id="particles-js"></div>
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h1 class="hero-title mb-4" style="font-family:Satisfy">Hello Harsh Here</h1>
+          <p class="hero-subtitle">Loves to <span class="typed" data-typed-items="Code, Sport, Explore, Be Together"></span></p>
+          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+        </div>
+      </div>
+    </div>
+  </div><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= Resume Section ======= -->
+
+    <section id="resume" class="about-mf sect-pt4 route" >
+      <div class="title-box text-center">
+        <h3 class="title-a">
+          About ME
+        </h3>
+        <div class="line-mf"></div>
+      </div>
+      <div class="container" >
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box-shadow-full" style="margin-bottom: -20px;">
+              <div id="About" class="section wb">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="message-box" style="padding-bottom: 10px; font-size:24px">                        
+                                <h2>Hi! Harsh this side</h2>
+                                <p>I am Harsh Kumar Das, a 18 year old from Kolkata by Origin pursuing his B.Tech in CSE from IIIT Manipur. .</p>
+                    <p>      Person love of getting logic and applying every method on practical use , it's the reason for me to choose CSE for algorithm.</p>
+                    <p>I love different cultures, their ways of living, observing people's behaviour and gettin many more experiences...</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="right-box-pro wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <img src="assets/img/mp1.jpg" alt="" class="img-fluid img-rounded" style="border-radius: 5%; border-bottom: 8px solid black; border-right: 8px solid black;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+            <!-- End About Section -->
+
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services-mf pt-5 route">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                PortFolio
+              </h3>
+              <p class="subtitle-a">
+                Trying to keep work where My interests lies
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-laptop"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Programming</h2>
+                <p class="s-description text-center">
+                I Never Focus on Learning Language rather focus on getting logic behind codes.
+                <br>
+                Can Code in Python, C/C++ Language
+                <br>
+                Web Development can be seen in this
+                <br>
+                For Database SQL I have
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-bar-chart"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Data Analytics</h2>
+                <p class="s-description text-center">
+                  My Most Favourite Field in World of logic
+                  <br>
+                  Loves to manipulate data and use them for a particular use
+                  <br>
+                  Currently in a learning Phase.....
+                  <br>
+                  <br>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-card-checklist"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Web Designing</h2>
+                <p class="s-description text-center">
+                  With HTML5 and CSS3 I try my best to design website to make them attractive
+                  <br>
+                  Some time even try to get inspiration from other templates & implement them in my own way.
+                </p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-binoculars"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Mystery With History</h2>
+                <p class="s-description text-center">
+                  Loves to get the mysterios insidious curiosity about the past historical events.
+                  <br>
+                  Put a Opinion/Perspective over it.
+                </p>
+              </div>
+            </div>
+          </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Counter Section ======= -->
+    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-check"></i></span>
+              </div>
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">MONTHS IN IIIT</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-files"></i></span>
+              </div>
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">PROJECTS</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-building"></i></span>
+              </div>
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">COMPANY WORK</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-award"></i></span>
+              </div>
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">AWARD WON</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Counter Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="work" class="portfolio-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                WorkSpace
+              </h3>
+              <p class="subtitle-a">
+                All Projects and Expereience
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/bank.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/bank.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Bank Credit Analysis</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Data Analysis</span> / <span class="w-date"></span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio-details.html" class="portfolio-lightbox"  data-glightbox="type: external"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img" style=" padding:20px; padding-bottom:33%">
+                  <img src="assets/img/coding.gif"  alt="" class="img-fluid" >
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8" >
+                    <h2 class="w-title" >Work in Progress</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Data Analysis</span> / <span class="w-date"></span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a class="portfolio-lightbox"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/bg2.jpg); height:400px">
+    </div><!-- End Testimonials Section -->
+
+    <!-- ======= Blog Section ======= -->
+    <section id="blog" class="blog-mf sect-pt4 route" style="margin-top: 0px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12" >
+            <div class="title-box text-center" style="margin-bottom: 1px;">
+              <h3 class="title-a">
+                Mystery-History
+              </h3>
+              <p class="subtitle-a">
+                Caution!
+                <br>
+                Can Create Controversies
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card card-blog" style="margin-top: 20px;">
+              <div class="card-img">
+                <a href="blog-single.html" data-gallery="portfolioGallery" class="portfolio-lightbox"><img src="assets/img/indep.jpg" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Post World War</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="blog-single.html"  class="portfolio-lightbox">Indepenedence of Colonies</a></h3>
+                <p class="card-description">
+                  The Real Cause of Freedom of India 
+                  and other Colonies
+                  More than the freedom fighters
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <a href="#" >
+                    <img src="assets/img/Harsh Photo.jpg" alt="" class="avatar rounded-circle">
+                    <span class="author">Harsh Kumar Das</span>
+                  </a>
+                </div>
+                <div class="post-date">
+                  <span class="bi bi-clock"></span> 1945-50
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-blog" style="margin-top: 20px;">
+              <div class="card-img">
+                <a href="" data-gallery="portfolioGallery" class="portfolio-lightbox"><img src="assets/img/stock.webp" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Money</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="" data-gallery="portfolioGallery" class="portfolio-lightbox">Finance Control</a></h3>
+                <p class="card-description">
+                  How Finance Actually regulates the world and the people with most power controlling it.
+                  <br>
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <a href="#">
+                    <img src="assets/img/Harsh Photo.jpg" alt="" class="avatar rounded-circle">
+                    <span class="author">Harsh Kumar Das</span>
+                  </a>
+                </div>
+                <div class="post-date">
+                  <span class="bi bi-clock"></span> Going
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Blog Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route">
+      <div class="container">
+        <video autoplay muted loop id="myVideo" type="video/mp4">
+          <source src="assets/img/rain.mp4">
+        </video>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="contact-mf">
+              <div id="contact" class="box-shadow-full">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                        Send Message Us
+                      </h5>
+                    </div>
+                    <div>
+                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="row">
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                            </div>
+                          </div>
+                          <div class="col-md-12 text-center my-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                          </div>
+                          <div class="col-md-12 text-center">
+                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="title-box-2 pt-4 pt-md-0">
+                      <h5 class="title-left">
+                        Get in Touch
+                      </h5>
+                    </div>
+                    <div class="more-info">
+                      <p class="lead">
+                        Fell Free to Contact me or Correct me in any of my Discussion 
+                      </p>
+                      <ul class="list-ico">
+                        <li><iframe style="border:0; width: 100%; height: 240px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.6107606057067!2d93.93622891492639!3d24.842981484062122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37492785030cfa5d%3A0xa9e85369c96babc0!2sIndian%20Institute%20of%20Information%20Technology%20Manipur!5e0!3m2!1sen!2sin!4v1677910416434!5m2!1sen!2sin" frameborder="0" allowfullscreen=""></iframe>
+                          </li>
+                        <li><span class="bi bi-envelope"></span> harshkumardas24@gmail.com</li>
+                      </ul>
+                    </div>
+                    <div class="socials">
+                      <ul>
+                        <li><a href=""><span class="ico-circle"><i class="bi bi-github"></i></span></a></li>
+                        <li><a href="mailto:harshkumardas24@gmail.com" target="_blank"><span class="ico-circle"><i class="bi bi-envelope"></i></span></a></li>
+                        <li><a href="https://www.linkedin.com/in/harsh-kumar-das-062440255" target="_blank"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>HarshKumarDas</strong>. All Rights Reserved</p>
+            <div class="credits">
+              <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+            -->
+              Innovated from <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/js/particles.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    particlesJS("particles-js", {"particles":{"number":
+    {"value":80,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},},"opacity":{"value":0.2,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.2,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"grab"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":0.4}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
+  </script>
+</body>
+
+</html>
