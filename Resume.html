@@ -457,7 +457,7 @@
                                 <img src="assets/img/G.png" class="card-img-top content-image" style="height:42px">     
                             </div>
                             <div class="card-body">
-                                <h6 class="mt-0 py-2 text-center font-weight-bold mooc-title" style="font-size:12px;">Python For Machine </h6>
+                                <h6 class="mt-0 py-2 text-center font-weight-bold mooc-title" style="font-size:12px;">Python For Machine Learning <br> (Basics)</h6>
                             </div>
                             </a>
                         </div>
@@ -494,15 +494,28 @@
                         <div class="card mb-3 mx-auto">
                            <div class="content">
                               <div class="content-overlay"></div>
-                                <img src="assets/img/css.png" class="card-img-top content-image" style="height:120px">     
+                                <img src="assets/img/css.png" class="card-img-top content-image" style="height:80px">     
                             </div>
                             <div class="card-body">
                                 <h6 class="mt-0 py-2 text-center font-weight-bold mooc-title" style="font-size:12px;">Introduction to CSS 3</h6>
                             </div>
                         </div>
                     </div>        
-                                   
+                    <div class="col-6 col-md-3 col-sm-4 column aos-init" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="600">  
+                      <div class="card mb-3 mx-auto">
+                          <a href="https://coursera.org/share/0004ecd554646c6e46a23baea65672c2" target="_blank"> 
+                         <div class="content">
+                            <div class="content-overlay"></div>
+                              <img src="assets/img/coursera.png" class="card-img-top content-image">     
+                          </div>
+                          <div class="card-body">
+                              <h6 class="mt-0 py-2 text-center font-weight-bold mooc-title" style="font-size:12px;">Capstone Retreiving, Processing and Data Visualisation</h6>
+                          </div>
+                          </a>
+                      </div>
+                  </div>               
                   </div>
+                  <div data-iframe-width="240" data-iframe-height="270" data-share-badge-id="79e05440-6493-473a-a10b-d80163544316" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
                 </div>
               </section>
               </section>
@@ -539,5 +552,28 @@
   
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script>
+      const scrollto = (el) => {
+        let elementPos = select(el).offsetTop
+        window.scrollTo({
+          top: elementPos,
+          behavior: 'smooth'
+        })
+      }
+      let skilsContent = select('.skills-content');
+    if (skilsContent) {
+      new Waypoint({
+        element: skilsContent,
+        offset: '80%',
+        handler: function(direction) {
+          let progress = select('.progress .progress-bar', true);
+          progress.forEach((el) => {
+            el.style.width = el.getAttribute('aria-valuenow') + '%'
+          });
+        }
+      })
+    }
+  
+    </script>
 </body>
 </html>
